@@ -4,8 +4,8 @@ from datetime import datetime
 
 class Todos(Document):
     todo: str = Field(max_length=400)
-    isDone: bool
-    date_created: datetime
+    isDone: bool = False
+    date_created: datetime = datetime.now()
 
     class Settings:
         name = 'todo_db'
