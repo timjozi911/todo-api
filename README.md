@@ -21,3 +21,30 @@
 | Parameter | Type     | Description                       |
 | :-------- | :------- | :-------------------------------- |
 | `id`      | `string` | **Required**. Id of item to fetch |
+
+#### Create a todo
+
+```http
+  POST /api/todos/
+```
+
+#### Update a todo
+
+```http
+  PUT /api/todos/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to update |
+
+
+#### Delete a todo
+
+```http
+  DELETE /api/todos/${id}
+```
+
+| Parameter | Type     | Description                       |
+| :-------- | :------- | :-------------------------------- |
+| `id`      | `string` | **Required**. Id of item to delete |
